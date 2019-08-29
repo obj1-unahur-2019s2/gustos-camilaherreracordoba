@@ -52,15 +52,23 @@ object placa {
 }
 
 object cajita {
-	var peso = 400
+	var peso 
 	var contenido
 	
 	method color() { return rojo }
 	method material() { return cobre }
+	method peso() { return peso + 400 }
 	method contenido(nuevoObjeto) { 
 		contenido = nuevoObjeto
 		peso = nuevoObjeto.peso()
 	} 
+}
+
+object banquito {
+	var color = //un color
+	
+	method color(nuevoColor) { color = nuevoColor }
+	method color() { return color }
 }
 
 
