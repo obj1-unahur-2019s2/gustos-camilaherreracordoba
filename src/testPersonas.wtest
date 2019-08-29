@@ -1,0 +1,25 @@
+import objetos.*
+import personas.*
+
+test "test rosa" {
+	assert.notThat(rosa.leGusta(bibloteca))
+	assert.that(rosa.leGusta(remera))
+}
+
+test "test juan" {
+	assert.that(juan.leGusta(pelota))
+	placa.color(verde)
+	placa.peso(300)
+	assert.notThat(juan.leGusta(placa))
+}
+
+test "test estefania" {
+	placa.color(rojo)
+	assert.that(estefania.leGusta(placa))
+	assert.notThat(estefania.leGusta(munieco))
+}
+
+test "test luisa" {
+	assert.notThat(luisa.leGusta(pelota))
+	assert.that(luisa.leGusta(placa))
+}
